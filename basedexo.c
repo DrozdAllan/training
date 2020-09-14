@@ -1,8 +1,10 @@
+/* renvoie la dernière place du caractère n dans la chaine de caractère place */
+
 #include <stdio.h>
 
 
 
-int nomdemerde(char* place, char n)
+int nomdemerde(char *place, char n)
 {
 
     int p = 0;
@@ -24,4 +26,7 @@ int main()
 
     char *str = "anticonstitutionnellement";
     printf("%d", nomdemerde("anticonstitutionnellement", 'i'));
+    printf("\n");
+
+ return (0);   
 }
