@@ -5,21 +5,23 @@
 
 int main()
 {
-  char *mot = "anticonstitutionnellement";
 
-  int debut = 0;
+  char mot[25];
+
+printf("entrez un mot : ");
+scanf("%s", mot);
 
   int longueur = strlen(mot);
 
-  int premierelettre = mot[debut];
+  int premierelettre = mot[0];
 
   printf("%s fait %d caractères \n", mot, longueur);
 
   printf("cette chaine commence par %c \n", premierelettre);
 
-  printf("voici cette chaine de caractere dans le sens inverse \n");
+  printf("voici cette chaine de caractere dans le sens inverse :\n");
 
-  while (mot[longueur] >= 0)
+  while (longueur >= 0)
   {
 
     printf("%c", mot[longueur]);
